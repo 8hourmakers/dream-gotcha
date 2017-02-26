@@ -31,7 +31,9 @@ router.get('/dream', ensureAuth, async (req, res) => {
 
         if (dreams.length === 0) {
             res.status(200);
-            res.json([]);
+            res.json({
+                results: [],
+            });
             return;
         }
 
