@@ -29,6 +29,12 @@ router.get('/dream', ensureAuth, async (req, res) => {
             order: 'id',
         });
 
+        if (dreams.length === 0) {
+            res.status(200);
+            res.json([]);
+            return;
+        }
+
         dream = await Dream.findById(last(dreams).id);
     } else {
         dream = await Dream.findByid(dreamId);
