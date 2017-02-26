@@ -1,0 +1,7 @@
+.idea/
+node_modules/
+dist/
+configs/
+log/
+resources/
+.DS_Store*
