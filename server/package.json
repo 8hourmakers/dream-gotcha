@@ -2,7 +2,7 @@
   "name": "dream-gotcha",
   "version": "8.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/run.js",
   "dependencies": {
     "@google-cloud/speech": "^0.6.0",
     "body-parser": "^1.16.1",
@@ -31,6 +31,6 @@
   "scripts": {
     "build": "babel src/ --out-dir dist/"
   },
-  "author": "",
-  "license": "Apache-2.0"
+  "author": "8 Hourmakes <8hourmakers@gmail.com>",
+  "private": true
 }
